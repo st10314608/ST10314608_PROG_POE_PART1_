@@ -165,7 +165,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
                     return;
                 }
                 Console.WriteLine("Enter the scaling factor (0.5 for half, 2 for double, 3 for triple):");
-                double factor = double.Parse(Console.ReadLine());
+                double factor = double.Parse(Console.ReadLine()); //This is where the user enters the scaling factor of the unit of measrement
 
                 foreach (Ingredient ingredient in recipe.Ingredients)
                 {
