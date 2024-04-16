@@ -157,7 +157,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
                 }
 
             }
-            static void ScaleRecipe() //Scaling of the recipe factors (including measurements)
+            static void ScaleRecipe() //Scaling of the recipe factors(includiing measurements)
             {
                 if (recipe == null || recipe.Ingredients.Count == 0)
                 {
