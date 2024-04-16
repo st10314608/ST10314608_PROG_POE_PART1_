@@ -189,7 +189,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
             {
                 recipe = null;
                 Console.WriteLine("All data cleared successfully!"); //Lets the user know that the data has been cleared successfully.
-                //End of application
+                //End of the Application
             }
         }
     }
