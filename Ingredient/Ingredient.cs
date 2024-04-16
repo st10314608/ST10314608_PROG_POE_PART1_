@@ -143,7 +143,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
                     Console.WriteLine("Please enter recipe details first.");
                     return;
                 }
-                // Declaring and displaying option list
+               //Declaring and displaying an option list
                 Console.WriteLine("\nRecipe Details:");
                 Console.WriteLine("Ingredients:");
                 foreach (Ingredient ingredient in recipe.Ingredients)
