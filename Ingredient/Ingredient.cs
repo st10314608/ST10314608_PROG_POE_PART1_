@@ -181,7 +181,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
                     Console.WriteLine("PLease enter recipe details first.");
                     return;
                 }
-                EnterRecipeDetails();
+                EnterRecipeDetails(); //User is required to enter the recipe details
 
             }
 
