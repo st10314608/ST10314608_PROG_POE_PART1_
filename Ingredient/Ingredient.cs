@@ -185,7 +185,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
 
             }
 
-            static void ClearAllData()
+            static void ClearAllData() //Tells the user that if slected, all the data that was entered will be cleared
             {
                 recipe = null;
                 Console.WriteLine("All data cleared successfully!"); //Lets the user know that the data has been cleared successfully.
