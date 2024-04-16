@@ -122,21 +122,21 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
             {
                 Console.WriteLine($"Please enter the name of the ingredient #{i + 1}:"); //Asks you to enter the name of the ingredient
                 string name = Console.ReadLine();
-                Console.WriteLine($"Please enter the quantity of the {name}:"); //Asks you to enter the amount of ingrdient/s
+                Console.WriteLine($"Please enter the quantity of the {name}:"); //Asks you to enter the name of the ingredient
                 double quantity = double.Parse(Console.ReadLine());
                 Console.WriteLine($"Enter the unit of measurement for {name}:"); //Asks you what unit of measurement you will be using for each ingredient
                 string unit = Console.ReadLine();
 
                 recipe.Ingredients.Add(new Ingredient { Name = name, Quantity = quantity, Unit = unit }); 
             }
-            Console.WriteLine("Enter the number of steps:");
+            Console.WriteLine("Enter the number of steps:"); //Asks the user to enter the number of steps they will be using
             int numSteps = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < numSteps; i++)
             {
                 Console.WriteLine("Recipe details entered successfully!");
             }
-            static void DisplayRecipe()
+            static void DisplayRecipe()  //This will display the recipe the user decides to enter
             {
                 if (recipe == null || recipe.Ingredients.Count == 0 || recipe.Steps.Count == 0)
                 {
@@ -151,7 +151,7 @@ namespace ST10314608_PROG2A_POE_Part1.Ingredient
                     Console.WriteLine($"{ingredient.Quantity} {ingredient.Unit} of {ingredient.Name}");
                 }
                 Console.WriteLine("\nSteps:");
-                foreach (Step step in recipe.Steps)
+                foreach (Step step in recipe.Steps) //This will display the steps breakdown
                 {
                     Console.WriteLine(step.Description);
                 }
