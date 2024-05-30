@@ -80,9 +80,9 @@ public class RecipeManager //Constructor
         }
 
         if (recipe.CalculateTotalCalories() > 300)
-        
-       
-         //Checks if the calories exceed 300
+
+
+        //Checks if the calories exceed 300
         {
             RecipeCaloriesExceededEvent?.Invoke($"Warning! The total calories of the recipe '{recipe.Name}' exceed 300!");
 
